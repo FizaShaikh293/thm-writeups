@@ -36,7 +36,7 @@ nmap -sC -sV <TARGET_IP>
 ```
 
 <!-- ADD SCREENSHOT: Screenshot_2026-04-28_232527.png (your nmap scan results) -->
-![nmap scan results](./screenshots/Screenshot_2026-04-28_232527.png)
+![nmap scan results](./ide/screenshots/Screenshot_2026-04-28_232527.png)
 
 The scan revealed four open ports:
 
@@ -66,7 +66,7 @@ Password: [press enter]
 ```
 
 <!-- ADD SCREENSHOT: Screenshot_2026-04-28_233011.png (your ftp login and ls output) -->
-![ftp anonymous login](./screenshots/Screenshot_2026-04-28_233011.png)
+![ftp anonymous login](./ide/screenshots/Screenshot_2026-04-28_233011.png)
 
 Running a regular `ls` showed an empty directory — nothing there. But running `ls -la` revealed a hidden directory called `...` (three dots). Easy to miss if you're not looking carefully. This is a common trick in CTFs.
 
@@ -223,7 +223,7 @@ sudo /usr/sbin/service vsftpd restart
 ```
 
 <!-- ADD SCREENSHOT: Screenshot_2026-04-28_233125.png (your ftp session / terminal work) -->
-![privilege escalation terminal](./screenshots/Screenshot_2026-04-28_233125.png)
+![privilege escalation terminal](./ide/screenshots/Screenshot_2026-04-28_233125.png)
 
 The shell came back as root.
 
