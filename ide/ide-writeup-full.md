@@ -34,7 +34,9 @@ First thing: figure out what's running on the box. I used nmap with service dete
 ```bash
 nmap -sC -sV <TARGET_IP>
 ```
-![alt text](<Screenshot 2026-04-28 232527.png>)
+
+<!-- ADD SCREENSHOT: Screenshot_2026-04-28_232527.png (your nmap scan results) -->
+![nmap scan results](./screenshots/Screenshot_2026-04-28_232527.png)
 
 The scan revealed four open ports:
 
@@ -63,7 +65,8 @@ Password: [press enter]
 230 Login successful.
 ```
 
-![alt text](<Screenshot 2026-04-28 233011.png>)
+<!-- ADD SCREENSHOT: Screenshot_2026-04-28_233011.png (your ftp login and ls output) -->
+![ftp anonymous login](./screenshots/Screenshot_2026-04-28_233011.png)
 
 Running a regular `ls` showed an empty directory — nothing there. But running `ls -la` revealed a hidden directory called `...` (three dots). Easy to miss if you're not looking carefully. This is a common trick in CTFs.
 
@@ -219,7 +222,8 @@ Then triggered the restart:
 sudo /usr/sbin/service vsftpd restart
 ```
 
-![alt text](<Screenshot 2026-04-28 233125.png>)
+<!-- ADD SCREENSHOT: Screenshot_2026-04-28_233125.png (your ftp session / terminal work) -->
+![privilege escalation terminal](./screenshots/Screenshot_2026-04-28_233125.png)
 
 The shell came back as root.
 
