@@ -9,7 +9,7 @@ My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 ---
 
 ## Stats
-
+|||
 |---|---|
 | Rank | Top 35% |
 | Completed Rooms | 16 |
