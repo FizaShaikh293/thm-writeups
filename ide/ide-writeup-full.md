@@ -1,3 +1,8 @@
+---
+layout: default
+title: IDE Writeup
+---
+
 # IDE — TryHackMe Writeup
 
 **Difficulty:** Easy  
