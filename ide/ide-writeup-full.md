@@ -36,7 +36,7 @@ nmap -sC -sV <TARGET_IP>
 ```
 
 <!-- ADD SCREENSHOT: Screenshot_2026-04-28_232527.png (your nmap scan results) -->
-![nmap scan results](./ide/screenshots/Screenshot_2026-04-28_232527.png)
+![nmap scan results](./ide/screenshots/Screenshot 2026-04-28 232527.png)
 
 The scan revealed four open ports:
 
