@@ -1,7 +1,4 @@
----
-layout: default
-title: IDE Writeup
----
+
 
 # TryHackMe Writeups
 
