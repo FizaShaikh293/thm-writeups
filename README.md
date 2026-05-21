@@ -35,7 +35,7 @@ Every writeup follows roughly the same structure:
 4. Escalate privileges
 5. Document what I learned and what tripped me up
 
-I try to write these in a way that my past self would have found useful — clear, honest about where I got stuck, and focused on understanding rather than just getting the flags.
+I try to write these in a way that my past self would have found useful: clear, honest about where I got stuck and focused on understanding rather than just getting the flags.
 
 ## Tools I Use
 
@@ -50,7 +50,7 @@ I try to write these in a way that my past self would have found useful — clea
 
 ## Note on Spoilers
 
-I try to explain the reasoning behind each step rather than just dumping commands and flags. For rooms that are still active on TryHackMe, I avoid giving away answers outright — the goal is that reading this helps you understand the approach, not just copy the solution.
+I try to explain the reasoning behind each step rather than just dumping commands and flags. For rooms that are still active on TryHackMe, I avoid giving away answers outright because the goal is that reading this helps you understand the approach, not just copy the solution.
 
 ---
 
