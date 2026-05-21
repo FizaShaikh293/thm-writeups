@@ -1,6 +1,6 @@
 # TryHackMe Writeups
 
-Hi, I'm Fiza. I'm currently learning cybersecurity through TryHackMe and this repo is where I document everything I work through. Each writeup covers my thought process, the tools I used, and what I actually learned from the room — not just the answers.
+Hi, I'm Fiza. I'm currently learning cybersecurity through TryHackMe and this repo is where I document everything I work through. Each writeup covers my thought process, the tools I used, and what I actually learned from the room and not just the answers.
 
 I'm still early in my journey so if you're a complete beginner looking for writeups that actually explain things without assuming you already know everything, you're in the right place.
 
@@ -21,6 +21,7 @@ I'm still early in my journey so if you're a complete beginner looking for write
 | Room | Difficulty | Category | Date |
 |------|------------|----------|------|
 | IDE | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
+| AI Threat Modelling Assessment | Easy | AI Security, Threat Modelling | 22-05-2026 |
 
 More coming as I work through rooms.
 
