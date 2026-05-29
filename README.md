@@ -20,8 +20,8 @@ I'm still early in my journey so if you're a complete beginner looking for write
 
 | Room | Difficulty | Category | Date |
 |------|------------|----------|------|
-| IDE | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
-| AI Threat Modelling Assessment | Easy | AI Security, Threat Modelling | 22-05-2026 |
+| [IDE](https://fizashaikh293.github.io/thm-writeups/ide/) | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
+| [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/) | Easy | AI Security, Threat Modelling | 22-05-2026 |
 
 More coming as I work through rooms.
 
