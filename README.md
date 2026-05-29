@@ -20,8 +20,8 @@ I'm still early in my journey so if you're a complete beginner looking for write
 
 | Room | Difficulty | Category | Date |
 |------|------------|----------|------|
-| [IDE](https://github.com/FizaShaikh293/thm-writeups/blob/main/ide/ide-writeup-full.md) | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
-| [AI Threat Modelling Assessment](https://github.com/FizaShaikh293/thm-writeups/blob/main/AI%20Threat%20Modelling/AI-TM_Writeup.md) | Easy | AI Security, Threat Modelling | 22-05-2026 |
+| [IDE](https://fizashaikh293.github.io/thm-writeups/ide/ide-writeup-full.html) | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
+| [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html) | Easy | AI Security, Threat Modelling | 22-05-2026 |
 
 More coming as I work through rooms.
 
