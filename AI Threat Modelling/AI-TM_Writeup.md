@@ -38,7 +38,7 @@ The two main attack scenarios in the assessment are:
 
 The task here is to place shields (defensive controls) on the components most at risk from data poisoning.
 
-![Data Poisoning scenario — placing shields on components in the AI pipeline](data-poisoning.png)
+![Data Poisoning scenario — placing shields on components in the AI pipeline](Screenshots/data-poisoning.png)
 
 When I looked at the pipeline, I thought about where poisoned data could enter or persist:
 
@@ -51,7 +51,7 @@ So I placed my two shields on **Retrieval** and **Database**. The reasoning: poi
 
 This scenario flips the direction. Instead of corrupting what goes in, the attacker is trying to extract what comes out — getting the model to surface confidential data through its response.
 
-![Attack Prevented — shields successfully blocked data leakage through the response chain](attack-prevented.png)
+![Attack Prevented — shields successfully blocked data leakage through the response chain](Screenshots/attack-prevented.png)
 
 The key insight the room gives you is in the "Why It Works" breakdown:
 
