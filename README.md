@@ -1,3 +1,5 @@
+#TryHackMe Writeups
+---
 ## Hi, I'm Fiza
 
 I'm currently learning cybersecurity through TryHackMe and this repo is where I document everything I work through. Each writeup covers my thought process, the tools I used and what I actually learned from the room.
