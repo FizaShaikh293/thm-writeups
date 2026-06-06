@@ -1,76 +1,54 @@
-```markdown
 ---
-layout: home
 title: Pre Security Path
+layout: page
 ---
 
-# Pre Security Path
-
-Welcome to my Pre-Security learning journey.  
-This section contains all modules completed as part of foundational cybersecurity training.
-
-Each module focuses on a different core area of cybersecurity, ranging from basic concepts to attacker and defender mindsets.
+# 🟢 Pre Security Path
 
 ---
 
-## 📚 Modules
+<div class="grid">
 
-### Module 1 - Introduction to Cybersecurity
-Understanding offensive vs defensive security, basic concepts, and career paths.
+<div class="card">
+<h3>🔐 Introduction to Cybersecurity</h3>
+<p>Basics of offensive vs defensive security and core concepts.</p>
+<a href="01-intro-to-cybersecurity">Open Module</a>
+</div>
 
-👉 [View Module 1](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/01-intro-to-cybersecurity.html)
----
+<div class="card">
+<h3>🌐 Network Fundamentals</h3>
+<p>OSI model, packets, LAN/WAN, routing basics.</p>
+<a href="02-network-fundamentals">Open Module</a>
+</div>
 
-### Module 2 - Network Fundamentals
-Basics of how networks work, OSI model, LAN, packets, and routing concepts.
+<div class="card">
+<h3>🧭 How the Web Works</h3>
+<p>DNS, HTTP, and web architecture explained.</p>
+<a href="03-how-the-web-works">Open Module</a>
+</div>
 
-👉 [View Module 2](./02-network-fundamentals.html)
+<div class="card">
+<h3>💻 Computer Fundamentals</h3>
+<p>Hardware, OS, client-server model.</p>
+<a href="04-computer-fundamentals">Open Module</a>
+</div>
 
----
+<div class="card">
+<h3>🖥 Operating Systems Basics</h3>
+<p>Windows, Linux, CLI, and system concepts.</p>
+<a href="05-operating-systems-basics">Open Module</a>
+</div>
 
-### Module 3 - How the Web Works
-DNS, HTTP, web architecture, and how websites function behind the scenes.
+<div class="card">
+<h3>📦 Software Basics</h3>
+<p>Data, encoding, programming basics.</p>
+<a href="06-software-basics">Open Module</a>
+</div>
 
-👉 [View Module 3](./03-how-the-web-works.html)
+<div class="card">
+<h3>⚔ Attacks and Defenses</h3>
+<p>CIA triad, cryptography, attacker mindset.</p>
+<a href="07-attacks-and-defenses">Open Module</a>
+</div>
 
----
-
-### Module 4 - Computer Fundamentals
-Core computer systems, hardware basics, client-server model, and cloud concepts.
-
-👉 [View Module 4](./04-computer-fundamentals.html)
-
----
-
-### Module 5 - Operating Systems Basics
-Windows, Linux, CLI basics, and system security fundamentals.
-
-👉 [View Module 5](./05-operating-systems-basics.html)
-
----
-
-### Module 6 - Software Basics
-Data representation, encoding, programming basics, and databases.
-
-👉 [View Module 6](./06-software-basics.html)
-
----
-
-### Module 7 - Attacks and Defenses
-CIA Triad, cryptography, attacker mindset vs defender mindset.
-
-👉 [View Module 7](./07-attacks-and-defenses.html)
-
----
-
-## 🧠 Summary
-
-This path builds foundational cybersecurity knowledge step-by-step.  
-It transitions from basic computing concepts to security thinking models used in real-world environments.
-
----
-
-## 🔗 Home
-
-← [Back to Homepage](../README.md)
-```
+</div>
