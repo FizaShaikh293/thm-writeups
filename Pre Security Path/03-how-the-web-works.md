@@ -1,9 +1,6 @@
 ---
 layout: default
-title: Intro to Cybersecurity
 ---
-
-# Pre-Security: Module 3 - How The Web Works
 
 **Learning Path:** Pre-Security  
 **Module:** 03 - How The Web Works  
