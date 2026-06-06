@@ -1,6 +1,5 @@
 ---
 layout: default
-title: network fundamentals
 ---
 
 **Learning Path:** Pre-Security  
