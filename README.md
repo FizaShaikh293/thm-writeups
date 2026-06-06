@@ -1,10 +1,17 @@
 # TryHackMe Writeups
 
-Hi, I'm Fiza. I'm currently learning cybersecurity through TryHackMe and this repo is where I document everything I work through. Each writeup covers my thought process, the tools I used, and what I actually learned from the room and not just the answers.
+TryHackMe room writeups by fiza.sk293  
+[View on GitHub](https://github.com/FizaShaikh293/thm-writeups)
 
-I'm still early in my journey so if you're a complete beginner looking for writeups that actually explain things without assuming you already know everything, you're in the right place.
+---
 
-**My TryHackMe profile:** fiza.sk293
+## Hi, I'm Fiza
+
+I'm currently learning cybersecurity through TryHackMe and this repo is where I document everything I work through. Each writeup covers my thought process, the tools I used and what I actually learned from the room.
+
+My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
+
+---
 
 ## Stats
 
@@ -16,6 +23,8 @@ I'm still early in my journey so if you're a complete beginner looking for write
 | Completed Paths | Pre-Security |
 | Current Path | Cybersecurity 101 |
 
+---
+
 ## Writeups
 
 | Room | Difficulty | Category | Date |
@@ -26,17 +35,22 @@ I'm still early in my journey so if you're a complete beginner looking for write
 
 More coming as I work through rooms.
 
+
+---
+
 ## How I Approach These
 
 Every writeup follows roughly the same structure:
 
-1. Scan the target and see what's running
-2. Enumerate everything before trying to exploit anything
-3. Get a foothold
-4. Escalate privileges
-5. Document what I learned and what tripped me up
+- Scan the target and see what's running
+- Enumerate everything before trying to exploit anything
+- Get a foothold
+- Escalate privileges
+- Document what I learned and what tripped me up
 
 I try to write these in a way that my past self would have found useful: clear, honest about where I got stuck and focused on understanding rather than just getting the flags.
+
+---
 
 ## Tools I Use
 
@@ -49,10 +63,12 @@ I try to write these in a way that my past self would have found useful: clear, 
 | linpeas | Automated privilege escalation enumeration |
 | THM AttackBox | Browser-based attack machine |
 
-## Note on Spoilers
+---
 
-I try to explain the reasoning behind each step rather than just dumping commands and flags. For rooms that are still active on TryHackMe, I avoid giving away answers outright because the goal is that reading this helps you understand the approach, not just copy the solution.
+## Note on Answers
+
+These writeups include task answers and flags. The goal is not to hand you something to copy paste but to walk through the reasoning so you understand why each answer is correct. If you are using these to check your own work or get unstuck on a specific step that is exactly what they are here for.
 
 ---
 
-Updated as I complete more rooms. Feel free to open an issue if something in a writeup is wrong or unclear.
+*Updated as I complete more rooms. Feel free to open an issue if something in a writeup is wrong or unclear.*
