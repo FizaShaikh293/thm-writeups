@@ -1,8 +1,4 @@
 # TryHackMe Writeups
-
-TryHackMe room writeups by fiza.sk293  
-[View on GitHub](https://github.com/FizaShaikh293/thm-writeups)
-
 ---
 
 ## Hi, I'm Fiza
@@ -17,10 +13,9 @@ My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 
 | Stat | Value |
 |------|-------|
-| Rank | Top 30% |
-| Completed Rooms | 21 |
-| Badges | 5 |
-| Completed Paths | Pre-Security |
+| Rank | Top 25% |
+| Completed Rooms | 25 |
+| Badges | 6 |
 | Current Path | Cybersecurity 101 |
 
 ---
@@ -33,7 +28,7 @@ My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 | [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html) | Easy | AI Security, Threat Modelling | 22-05-2026 |
 | [Intro to Cybersecurity](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/01-intro-to-cybersecurity.html) | Easy | Pre Security | 06-06-2026 |
 
-More coming as I work through rooms.
+More coming as I work through Rooms and Learning Paths.
 
 
 ---
