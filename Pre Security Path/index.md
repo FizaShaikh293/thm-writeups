@@ -1,6 +1,6 @@
 ```markdown
 ---
-layout: default
+layout: home
 title: Pre Security Path
 ---
 
