@@ -1,4 +1,3 @@
-# TryHackMe Writeups
 ---
 
 ## Hi, I'm Fiza
