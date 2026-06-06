@@ -1,9 +1,3 @@
-
----
-layout: default
-title: AI Threat Modelling Assessment
----
-
 # AI Threat Modelling Assessment
 
 **Difficulty:** Easy  
