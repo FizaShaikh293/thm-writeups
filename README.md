@@ -22,11 +22,11 @@ My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 
 ## Writeups
 
-| Room | Difficulty | Category | Date |
+| Room/Learning Path | Difficulty | Category | Date |
 |------|------------|----------|------|
 | [IDE](https://fizashaikh293.github.io/thm-writeups/ide/ide-writeup-full.html) | Easy | Linux, Enumeration, Privilege Escalation | 28-04-2026 |
 | [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html) | Easy | AI Security, Threat Modelling | 22-05-2026 |
-| [Intro to Cybersecurity](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/01-intro-to-cybersecurity.html) | Easy | Pre Security | 06-06-2026 |
+| [Pre Security Path](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/) | Easy | Pre Security | 06-06-2026 |
 
 More coming as I work through Rooms and Learning Paths.
 
