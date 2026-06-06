@@ -1,4 +1,7 @@
-# Pre-Security: Module 4 - Computer Fundamentals
+---
+layout: default
+title: Intro to Cybersecurity
+---
 
 **Learning Path:** Pre-Security  
 **Module:** 04 - Computer Fundamentals  
