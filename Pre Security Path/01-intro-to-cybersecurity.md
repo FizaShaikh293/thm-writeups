@@ -2,7 +2,6 @@
 layout: default
 title: Intro to Cybersecurity
 ---
-#Pre-Security: Module 1 - Introduction to Cyber Security
 
 **Learning Path:** Pre-Security  
 **Module:** 01 - Introduction to Cyber Security  
