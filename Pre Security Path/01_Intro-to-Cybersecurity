@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Module 1 - Intro to Cybersecurity
+title: Intro to Cybersecurity
 ---
 #Pre-Security: Module 1 - Introduction to Cyber Security
 
@@ -16,7 +16,7 @@ title: Module 1 - Intro to Cybersecurity
 
 Module 1 is the entry point for the Pre-Security path. No exploitation, no complex tooling. Just getting clear on what the two sides of cybersecurity actually do and what career options exist within the field. The Offensive Security Intro room does include a live lab where you run `gobuster` against a simulated bank website, which makes the theory tangible immediately.
 
-For me personally this wasn't entirely new ground. I spent a year as an IT Security Support Analyst doing SIEM monitoring, vulnerability management and incident response, so the defensive side felt familiar. Going through it methodically helped me put cleaner labels on things I had been doing in practice without always knowing the formal terminology.
+Personally, this wasn't entirely new ground. I spent a year as an IT Security Support Analyst doing SIEM monitoring, vulnerability management and incident response, so the defensive side felt familiar. Going through it methodically helped me put cleaner labels on things I had been doing in practice without always knowing the formal terminology.
 
 ---
 
