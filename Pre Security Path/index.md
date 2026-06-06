@@ -12,8 +12,7 @@ layout: page
 <div class="card">
 <h3>🔐 Introduction to Cybersecurity</h3>
 <p>Basics of offensive vs defensive security and core concepts.</p>
-<a href="01-intro-to-cybersecurity">Open Module</a>
-</div>
+<a href="/thm-writeups/Pre%20Security%20Path/01-intro-to-cybersecurity">Open Module</a></div>
 
 <div class="card">
 <h3>🌐 Network Fundamentals</h3>
