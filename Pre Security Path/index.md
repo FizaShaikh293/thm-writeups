@@ -22,7 +22,7 @@ Welcome to my cybersecurity learning journey.
 <div class="card">
 <h3>🧭 How the Web Works</h3>
 <p>DNS, HTTP, web structure.</p>
-<a href="/thm-writeups/Pre%20Security%20Path/03-how-the-web-works.md">Open Module</a></div>
+<a href="/thm-writeups/Pre%20Security%20Path/03-how-the-web-works">Open Module</a></div>
 
 <div class="card">
 <h3>💻 Computer Fundamentals</h3>
