@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro to Cybersecurity
+title: Computer Fundamentals
 ---
 
 **Learning Path:** Pre-Security  
