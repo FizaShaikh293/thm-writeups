@@ -1,5 +1,6 @@
 ---
 layout: default
+title: How the web works
 ---
 
 **Learning Path:** Pre-Security  
