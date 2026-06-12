@@ -4,9 +4,13 @@ title: Operating Systems Basics
 ---
 
 **Learning Path:** Pre-Security
+
 **Module:** 05 - Operating Systems Basics
+
 **Rooms Completed:** Operating Systems: Introduction · Windows Basics · Linux CLI Basics · Windows CLI Basics · Operating System Security
+
 **Date Completed:** May - June 2026
+
 **Difficulty:** Beginner (Theory + Interactive Labs)
 
 ---
