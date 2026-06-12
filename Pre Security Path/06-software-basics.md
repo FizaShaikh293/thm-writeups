@@ -4,9 +4,13 @@ title: Software Basics
 ---
 
 **Learning Path:** Pre-Security
+
 **Module:** 06 - Software Basics
+
 **Rooms Completed:** Data Representation · Data Encoding · Python: Simple Demo · JavaScript: Simple Demo · Database SQL Basics
+
 **Date Completed:** June 2026
+
 **Difficulty:** Beginner (Theory + Interactive Exercises)
 
 ---
