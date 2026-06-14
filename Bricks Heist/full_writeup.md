@@ -4,9 +4,12 @@ title: TryHack3M: Bricks Heist
 ---
 
 
-**Format:** Boot-to-Root CTF + Threat Hunting <div>
-**Difficulty:** Medium <div>
-**CVE:** CVE-2024-25600 (WordPress Bricks Builder RCE) <div>
+**Format:** Boot-to-Root CTF + Threat Hunting 
+
+**Difficulty:** Medium 
+
+**CVE:** CVE-2024-25600 (WordPress Bricks Builder RCE) 
+
 
 ---
 
