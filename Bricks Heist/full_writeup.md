@@ -2,12 +2,11 @@
 layout: default
 title: TryHack3M: Bricks Heist
 ---
-**TryHackMe room writeup by fiza.sk293**
 
-**Room Link:** https://tryhackme.com/room/tryhack3mbricksheist
-**Format:** Boot-to-Root CTF + Threat Hunting
-**Difficulty:** Medium
-**CVE:** CVE-2024-25600 (WordPress Bricks Builder RCE)
+
+**Format:** Boot-to-Root CTF + Threat Hunting <div>
+**Difficulty:** Medium <div>
+**CVE:** CVE-2024-25600 (WordPress Bricks Builder RCE) <div>
 
 ---
 
