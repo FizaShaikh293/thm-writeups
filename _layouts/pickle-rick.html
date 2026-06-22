@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Courier New", monospace;
+      background: radial-gradient(circle at top, #0f3d0f, #000);
+      color: #00ff99;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #00ff99;
+      text-shadow: 0 0 10px #00ff99;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    code, pre {
+      background: #001a10;
+      padding: 10px;
+      border-left: 4px solid #00ff99;
+      overflow-x: auto;
+    }
+
+    a {
+      color: #66ffcc;
+    }
+
+    .portal {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .portal img {
+      width: 150px;
+      filter: drop-shadow(0 0 10px #00ff99);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🧪 Pickle Rick Writeup</h1>
+    <p>“I turned myself into a writeup, Morty!”</p>
+  </header>
+
+  <div class="portal">
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="portal">
+  </div>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+</body>
+</html>
