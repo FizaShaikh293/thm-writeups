@@ -1,194 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+<meta charset="UTF-8">
+<title>{{ page.title }}</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Courier New", monospace;
-      background: #050805;
-      color: #00ff88;
-      overflow-x: hidden;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background: #050805;
+  color: #00ff88;
+}
 
-    /* neon animated background */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(0,255,120,0.15), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(0,255,120,0.10), transparent 50%);
-      animation: pulse 6s infinite alternate;
-      z-index: -1;
-    }
+/* 🌌 neon animated background (top effect) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0,255,120,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(0,255,120,0.10), transparent 50%);
+  animation: pulse 6s infinite alternate;
+  z-index: -1;
+}
 
-    @keyframes pulse {
-      from { transform: scale(1); filter: blur(0px); }
-      to { transform: scale(1.05); filter: blur(2px); }
-    }
+@keyframes pulse {
+  from { transform: scale(1); filter: blur(0px); }
+  to { transform: scale(1.05); filter: blur(2px); }
+}
 
-    header {
-      text-align: center;
-      padding: 30px;
-      border-bottom: 1px solid #00ff88;
-      text-shadow: 0 0 10px #00ff88;
-    }
+/* header */
+header {
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
+header h1 {
+  margin: 0;
+}
 
-    .subtitle {
-      color: #66ffcc;
-      font-style: italic;
-      margin-top: 5px;
-    }
+/* main content wrapper */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    .portal {
-      text-align: center;
-      margin: 20px 0;
-    }
+/* INFO CARD ONLY (kept as you wanted) */
+.info-card {
+  border: 1px solid #00ff88;
+  padding: 10px;
+  margin: 20px 0;
+  background: rgba(0, 30, 15, 0.35);
+  white-space: pre;
+}
 
-    .portal img {
-      width: 160px;
-      filter: drop-shadow(0 0 12px #00ff88);
-    }
+/* optional: keep markdown code blocks readable */
+pre, code {
+  background: #001a10;
+  padding: 8px;
+  overflow-x: auto;
+  border-left: 3px solid #00ff88;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+/* links */
+a {
+  color: #66ffcc;
+}
 
-    /* GENERAL PANEL */
-    .panel {
-      border: 1px solid #00ff88;
-      padding: 16px;
-      margin: 20px 0;
-      background: rgba(0, 25, 15, 0.35);
-      box-shadow: 0 0 10px rgba(0,255,120,0.15);
-    }
+/* CTF flags */
+details {
+  border: 1px solid #00ff88;
+  padding: 10px;
+  margin: 10px 0;
+}
 
-    /* INFO CARD (your Option 3 upgraded) */
-    .info-card {
-      border: 1px solid #00ff88;
-      padding: 14px;
-      background: rgba(0, 40, 20, 0.4);
-      box-shadow: 0 0 12px rgba(0,255,120,0.25);
-      white-space: pre;
-      margin: 15px 0;
-    }
+summary {
+  color: #66ffcc;
+  cursor: pointer;
+}
 
-    /* CLICKABLE FLAG BOX */
-    details {
-      border: 1px solid #00ff88;
-      padding: 10px;
-      margin: 12px 0;
-      background: rgba(0, 30, 15, 0.35);
-      box-shadow: 0 0 10px rgba(0,255,120,0.1);
-      cursor: pointer;
-    }
-
-    summary {
-      color: #66ffcc;
-      font-weight: bold;
-      outline: none;
-    }
-
-    summary:hover {
-      text-shadow: 0 0 8px #00ff88;
-    }
-
-    .flag {
-      margin-top: 10px;
-      padding: 10px;
-      background: #001a10;
-      border-left: 3px solid #00ff88;
-      color: #00ff88;
-    }
-
-    code {
-      background: #001a10;
-      padding: 8px;
-      border-left: 3px solid #00ff88;
-      display: block;
-      overflow-x: auto;
-    }
-
-    a {
-      color: #66ffcc;
-    }
-
-    .emoji-bar {
-      text-align: center;
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
-
-    .glitch {
-      animation: glitch 1.5s infinite;
-    }
-
-    @keyframes glitch {
-      0% { text-shadow: 2px 0 #00ff88; }
-      50% { text-shadow: -2px 0 #00ffff; }
-      100% { text-shadow: 2px 0 #00ff88; }
-    }
-  </style>
+.flag {
+  margin-top: 10px;
+  padding: 8px;
+  background: #001a10;
+  border-left: 3px solid #00ff88;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1 class="glitch">🧪 Pickle Rick Writeup</h1>
-  <div class="subtitle">“I turned myself into a GitHub page, Morty!”</div>
+  <h1>🧪 Pickle Rick Writeup</h1>
 </header>
 
-<div class="emoji-bar">
-  💚 WUBBA LUBBA DUB DUB 💚
-</div>
-
-<div class="portal">
-  <img src="https://i.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" alt="rick portal">
-</div>
-
 <div class="container">
-
-  <!-- INFO CARD -->
-  <div class="info-card">
-[INFO CARD]
-Platform   : TryHackMe
-Difficulty : Easy
-Category   : Web Exploitation | Linux PrivEsc
-Tags       : Command Injection | Web Shell | Sudo Misconfiguration
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="panel">
-    {{ content }}
-  </div>
-
-  <!-- CTF STYLE FLAG BOXES -->
-  <details>
-    <summary>🔓 View Flag 1</summary>
-    <div class="flag">THM{example_flag_1}</div>
-  </details>
-
-  <details>
-    <summary>🔓 View Flag 2</summary>
-    <div class="flag">THM{example_flag_2}</div>
-  </details>
-
-  <details>
-    <summary>🔓 View Root Flag</summary>
-    <div class="flag">THM{root_flag_here}</div>
-  </details>
-
+  {{ content }}
 </div>
 
 </body>
