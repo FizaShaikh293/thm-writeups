@@ -5,12 +5,11 @@ title: Pickle Rick Writeup
 
 # [Pickle Rick](https://tryhackme.com/room/picklerick)
 
-| Field      | Details                          |
-|------------|----------------------------------|
-| Platform   | TryHackMe                        |
-| Difficulty | Easy                             |
-| Category   | Web Exploitation, Linux PrivEsc  |
-| Tags       | Command Injection, Web Shell, Sudo Misconfiguration |
+[INFO CARD]
+Platform : TryHackMe
+Difficulty : Easy
+Category : Web Exploitation | Linux PrivEsc
+Tags : Command Injection | Web Shell | Sudo Misconfiguration
 
 ---
 
