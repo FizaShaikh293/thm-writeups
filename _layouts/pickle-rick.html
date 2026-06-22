@@ -9,45 +9,44 @@
       margin: 0;
       font-family: "Courier New", monospace;
       background: #050805;
-      color: #00ff66;
+      color: #00ff88;
       overflow-x: hidden;
     }
 
-    /* glowing animated background */
+    /* neon animated background */
     body::before {
       content: "";
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 20% 20%, rgba(0,255,100,0.15), transparent 40%),
-                  radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
-                  radial-gradient(circle at 50% 80%, rgba(0,255,100,0.10), transparent 50%);
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(0,255,120,0.15), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(0,255,120,0.10), transparent 50%);
       animation: pulse 6s infinite alternate;
       z-index: -1;
     }
 
     @keyframes pulse {
-      from { filter: blur(0px); transform: scale(1); }
-      to { filter: blur(2px); transform: scale(1.05); }
+      from { transform: scale(1); filter: blur(0px); }
+      to { transform: scale(1.05); filter: blur(2px); }
     }
 
     header {
       text-align: center;
       padding: 30px;
-      border-bottom: 2px solid #00ff66;
-      text-shadow: 0 0 15px #00ff66;
+      border-bottom: 1px solid #00ff88;
+      text-shadow: 0 0 10px #00ff88;
     }
 
     header h1 {
-      font-size: 3rem;
       margin: 0;
+      font-size: 2.8rem;
     }
 
     .subtitle {
       color: #66ffcc;
       font-style: italic;
+      margin-top: 5px;
     }
 
     .portal {
@@ -57,30 +56,68 @@
 
     .portal img {
       width: 160px;
-      filter: drop-shadow(0 0 15px #00ff66);
+      filter: drop-shadow(0 0 12px #00ff88);
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
     }
 
-    /* CTF style panels */
+    /* GENERAL PANEL */
     .panel {
-      border: 1px solid #00ff66;
-      padding: 15px;
+      border: 1px solid #00ff88;
+      padding: 16px;
       margin: 20px 0;
-      background: rgba(0, 20, 10, 0.4);
-      box-shadow: 0 0 10px rgba(0,255,100,0.2);
+      background: rgba(0, 25, 15, 0.35);
+      box-shadow: 0 0 10px rgba(0,255,120,0.15);
     }
 
-    code, pre {
-      background: #001a0a;
+    /* INFO CARD (your Option 3 upgraded) */
+    .info-card {
+      border: 1px solid #00ff88;
+      padding: 14px;
+      background: rgba(0, 40, 20, 0.4);
+      box-shadow: 0 0 12px rgba(0,255,120,0.25);
+      white-space: pre;
+      margin: 15px 0;
+    }
+
+    /* CLICKABLE FLAG BOX */
+    details {
+      border: 1px solid #00ff88;
       padding: 10px;
+      margin: 12px 0;
+      background: rgba(0, 30, 15, 0.35);
+      box-shadow: 0 0 10px rgba(0,255,120,0.1);
+      cursor: pointer;
+    }
+
+    summary {
+      color: #66ffcc;
+      font-weight: bold;
+      outline: none;
+    }
+
+    summary:hover {
+      text-shadow: 0 0 8px #00ff88;
+    }
+
+    .flag {
+      margin-top: 10px;
+      padding: 10px;
+      background: #001a10;
+      border-left: 3px solid #00ff88;
+      color: #00ff88;
+    }
+
+    code {
+      background: #001a10;
+      padding: 8px;
+      border-left: 3px solid #00ff88;
       display: block;
       overflow-x: auto;
-      border-left: 3px solid #00ff66;
     }
 
     a {
@@ -89,8 +126,18 @@
 
     .emoji-bar {
       text-align: center;
-      font-size: 1.2rem;
       margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .glitch {
+      animation: glitch 1.5s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 #00ff88; }
+      50% { text-shadow: -2px 0 #00ffff; }
+      100% { text-shadow: 2px 0 #00ff88; }
     }
   </style>
 </head>
@@ -98,23 +145,49 @@
 <body>
 
 <header>
-  <h1>🧪 Pickle Rick Writeup</h1>
+  <h1 class="glitch">🧪 Pickle Rick Writeup</h1>
   <div class="subtitle">“I turned myself into a GitHub page, Morty!”</div>
 </header>
 
 <div class="emoji-bar">
-  💚 WUBBA LUBBA DUB DUB 💚 
+  💚 WUBBA LUBBA DUB DUB 💚
 </div>
 
 <div class="portal">
- <img src="https://i.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" alt="rick portal">
+  <img src="https://i.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" alt="rick portal">
 </div>
 
 <div class="container">
 
+  <!-- INFO CARD -->
+  <div class="info-card">
+[INFO CARD]
+Platform   : TryHackMe
+Difficulty : Easy
+Category   : Web Exploitation | Linux PrivEsc
+Tags       : Command Injection | Web Shell | Sudo Misconfiguration
+  </div>
+
+  <!-- MAIN CONTENT -->
   <div class="panel">
     {{ content }}
   </div>
+
+  <!-- CTF STYLE FLAG BOXES -->
+  <details>
+    <summary>🔓 View Flag 1</summary>
+    <div class="flag">THM{example_flag_1}</div>
+  </details>
+
+  <details>
+    <summary>🔓 View Flag 2</summary>
+    <div class="flag">THM{example_flag_2}</div>
+  </details>
+
+  <details>
+    <summary>🔓 View Root Flag</summary>
+    <div class="flag">THM{root_flag_here}</div>
+  </details>
 
 </div>
 
