@@ -1,106 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>{{ page.title }}</title>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: "Courier New", monospace;
-  background: #050805;
-  color: #00ff88;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: "Courier New", monospace;
+      background: #050805;
+      color: #00ff66;
+      overflow-x: hidden;
+    }
 
-/* 🌌 neon animated background (top effect) */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0,255,120,0.15), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(0,255,120,0.10), transparent 50%);
-  animation: pulse 6s infinite alternate;
-  z-index: -1;
-}
+    /* glowing animated background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 20%, rgba(0,255,100,0.15), transparent 40%),
+                  radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(0,255,100,0.10), transparent 50%);
+      animation: pulse 6s infinite alternate;
+      z-index: -1;
+    }
 
-@keyframes pulse {
-  from { transform: scale(1); filter: blur(0px); }
-  to { transform: scale(1.05); filter: blur(2px); }
-}
+    @keyframes pulse {
+      from { filter: blur(0px); transform: scale(1); }
+      to { filter: blur(2px); transform: scale(1.05); }
+    }
 
-/* header */
-header {
-  text-align: center;
-  padding: 25px;
-  border-bottom: 1px solid #00ff88;
-  text-shadow: 0 0 10px #00ff88;
-}
+    header {
+      text-align: center;
+      padding: 30px;
+      border-bottom: 2px solid #00ff66;
+      text-shadow: 0 0 15px #00ff66;
+    }
 
-header h1 {
-  margin: 0;
-}
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
 
-/* main content wrapper */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
+    .subtitle {
+      color: #66ffcc;
+      font-style: italic;
+    }
 
-/* INFO CARD ONLY (kept as you wanted) */
-.info-card {
-  border: 1px solid #00ff88;
-  padding: 10px;
-  margin: 20px 0;
-  background: rgba(0, 30, 15, 0.35);
-  white-space: pre;
-}
+    .portal {
+      text-align: center;
+      margin: 20px 0;
+    }
 
-/* optional: keep markdown code blocks readable */
-pre, code {
-  background: #001a10;
-  padding: 8px;
-  overflow-x: auto;
-  border-left: 3px solid #00ff88;
-}
+    .portal img {
+      width: 160px;
+      filter: drop-shadow(0 0 15px #00ff66);
+    }
 
-/* links */
-a {
-  color: #66ffcc;
-}
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
-/* CTF flags */
-details {
-  border: 1px solid #00ff88;
-  padding: 10px;
-  margin: 10px 0;
-}
+    /* CTF style panels */
+    .panel {
+      border: 1px solid #00ff66;
+      padding: 15px;
+      margin: 20px 0;
+      background: rgba(0, 20, 10, 0.4);
+      box-shadow: 0 0 10px rgba(0,255,100,0.2);
+    }
 
-summary {
-  color: #66ffcc;
-  cursor: pointer;
-}
+    code, pre {
+      background: #001a0a;
+      padding: 10px;
+      display: block;
+      overflow-x: auto;
+      border-left: 3px solid #00ff66;
+    }
 
-.flag {
-  margin-top: 10px;
-  padding: 8px;
-  background: #001a10;
-  border-left: 3px solid #00ff88;
-}
-</style>
+    a {
+      color: #66ffcc;
+    }
+
+    .emoji-bar {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>🧪 Pickle Rick Writeup</h1>
+  <div class="subtitle">“I turned myself into a GitHub page, Morty!”</div>
 </header>
 
+<div class="emoji-bar">
+  💚 WUBBA LUBBA DUB DUB 💚 
+</div>
+
+<div class="portal">
+ <img src="https://i.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" alt="rick portal">
+</div>
+
 <div class="container">
-  {{ content }}
+
+  <div class="panel">
+    {{ content }}
+  </div>
+
 </div>
 
 </body>
-</html>
+</html> give me a full new with info cad stle and clickable flag reveal boxes (CTF style)
