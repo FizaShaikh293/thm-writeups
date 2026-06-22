@@ -8,36 +8,46 @@
     body {
       margin: 0;
       font-family: "Courier New", monospace;
-      background: radial-gradient(circle at top, #0f3d0f, #000);
-      color: #00ff99;
+      background: #050805;
+      color: #00ff66;
+      overflow-x: hidden;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
+    /* glowing animated background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 20%, rgba(0,255,100,0.15), transparent 40%),
+                  radial-gradient(circle at 80% 30%, rgba(0,255,255,0.10), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(0,255,100,0.10), transparent 50%);
+      animation: pulse 6s infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes pulse {
+      from { filter: blur(0px); transform: scale(1); }
+      to { filter: blur(2px); transform: scale(1.05); }
     }
 
     header {
       text-align: center;
-      padding: 20px;
-      border-bottom: 2px solid #00ff99;
-      text-shadow: 0 0 10px #00ff99;
+      padding: 30px;
+      border-bottom: 2px solid #00ff66;
+      text-shadow: 0 0 15px #00ff66;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
     }
 
-    code, pre {
-      background: #001a10;
-      padding: 10px;
-      border-left: 4px solid #00ff99;
-      overflow-x: auto;
-    }
-
-    a {
+    .subtitle {
       color: #66ffcc;
+      font-style: italic;
     }
 
     .portal {
@@ -46,26 +56,67 @@
     }
 
     .portal img {
-      width: 150px;
-      filter: drop-shadow(0 0 10px #00ff99);
+      width: 160px;
+      filter: drop-shadow(0 0 15px #00ff66);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* CTF style panels */
+    .panel {
+      border: 1px solid #00ff66;
+      padding: 15px;
+      margin: 20px 0;
+      background: rgba(0, 20, 10, 0.4);
+      box-shadow: 0 0 10px rgba(0,255,100,0.2);
+    }
+
+    code, pre {
+      background: #001a0a;
+      padding: 10px;
+      display: block;
+      overflow-x: auto;
+      border-left: 3px solid #00ff66;
+    }
+
+    a {
+      color: #66ffcc;
+    }
+
+    .emoji-bar {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 10px 0;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🧪 Pickle Rick Writeup</h1>
-    <p>“I turned myself into a writeup, Morty!”</p>
-  </header>
+<header>
+  <h1>🧪 Pickle Rick Writeup</h1>
+  <div class="subtitle">“I turned myself into a GitHub page, Morty!”</div>
+</header>
 
-  <div class="portal">
-    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="portal">
-  </div>
+<div class="emoji-bar">
+  🧪 ☣️ 🧬 🛸 💚 WUBBA LUBBA DUB DUB 💚 🛸 🧬 ☣️ 🧪
+</div>
 
-  <div class="container">
+<div class="portal">
+  <img src="https://media.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif" alt="portal gif">
+</div>
+
+<div class="container">
+
+  <div class="panel">
     {{ content }}
   </div>
+
+</div>
 
 </body>
 </html>
