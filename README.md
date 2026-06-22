@@ -27,7 +27,7 @@ My TryHackMe profile: [fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 | [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html) | Easy | AI Security, Threat Modelling | 22-05-2026 |
 | [Pre Security Path](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/) | Easy | Pre Security | 06-06-2026 |
 | [TryHack3M: Bricks Heist](https://fizashaikh293.github.io/thm-writeups/Bricks%20Heist/full_writeup.html) | Easy | Boot-to-Root CTF + Threat Hunting | 08-06-2026 |
-| [Pickle Rick](https://fizashaikh293.github.io/thm-writeups/pickle-rick/pickle-rick_writeup.html) | Easy | Linux, Web Exploitation, Enumeration, Privilege Escalation | 10-06-2026 |
+| [Pickle Rick](https://fizashaikh293.github.io/thm-writeups/Pickle%20Rick/pickle-rick_writeup.html) | Easy | Linux, Web Exploitation, Enumeration, Privilege Escalation | 10-06-2026 |
 
 More coming as I work through Rooms and Learning Paths.
 
