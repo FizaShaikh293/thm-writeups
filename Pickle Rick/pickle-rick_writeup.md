@@ -1,3 +1,8 @@
+---
+layout: pickle-rick
+title: Pickle Rick Writeup
+---
+
 # [Pickle Rick](https://tryhackme.com/room/picklerick)
 
 | Field      | Details                          |
