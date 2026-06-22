@@ -7,10 +7,10 @@ title: Pickle Rick Writeup
 
 <div class="info-card">
 
-Platform   : TryHackMe
-Difficulty : Easy
-Category   : Web Exploitation | Linux PrivEsc
-Tags       : Command Injection | Web Shell | Sudo Misconfiguration
+Platform   : TryHackMe <br>
+Difficulty : Easy <br>
+Category   : Web Exploitation | Linux PrivEsc <br> 
+Tags       : Command Injection | Web Shell | Sudo Misconfiguration <br>
 
 </div>
 
