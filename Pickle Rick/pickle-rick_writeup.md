@@ -7,7 +7,6 @@ title: Pickle Rick Writeup
 
 | Field      | Details                          |
 |------------|----------------------------------|
-| Room       | [Pickle Rick](https://tryhackme.com/room/picklerick) |
 | Platform   | TryHackMe                        |
 | Difficulty | Easy                             |
 | Category   | Web Exploitation, Linux PrivEsc  |
