@@ -113,9 +113,9 @@ These are written for learning purposes and are not meant to be copy-paste solut
 
 Each writeup focuses on:
 
-* understanding the attack path
-* why each step works
-* how to think like an attacker
+* Understanding the attack path
+* Why each step works
+* How to think like an attacker
 
 ---
 
