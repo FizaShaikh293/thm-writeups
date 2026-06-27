@@ -4,15 +4,10 @@
 
 I'm currently learning cybersecurity through TryHackMe, and this repository is where I document everything I work through.
 
-Each writeup breaks down:
-
-* my thought process
-* tools used
-* what I learned
-* mistakes I made along the way
+Each writeup includes my thought process, tools used, and key lessons learned.
 
 **TryHackMe Profile:**
-https://tryhackme.com/p/fiza.sk293
+[fiza.sk293](https://tryhackme.com/p/fiza.sk293)
 
 ---
 
@@ -26,57 +21,51 @@ https://tryhackme.com/p/fiza.sk293
 
 # 📝 Writeups
 
-## 🔹 IDE
+## 🔹 [IDE](https://fizashaikh293.github.io/thm-writeups/ide/ide-writeup-full.html)
 
 * Difficulty: Easy
 * Category: Linux, Enumeration, Privilege Escalation
 * Date: 28-04-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/ide/ide-writeup-full.html
 
 ---
 
-## 🔹 AI Threat Modelling Assessment
+## 🔹 [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html)
 
 * Difficulty: Easy
 * Category: AI Security, Threat Modelling
 * Date: 22-05-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html
 
 ---
 
-## 🔹 Pre Security Path
+## 🔹 [Pre Security Path](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/)
 
 * Difficulty: Easy
 * Category: Pre Security
 * Date: 06-06-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/
 
 ---
 
-## 🔹 TryHack3M: Bricks Heist
+## 🔹 [TryHack3M: Bricks Heist](https://fizashaikh293.github.io/thm-writeups/Bricks%20Heist/full_writeup.html)
 
 * Difficulty: Easy
 * Category: Boot-to-Root CTF + Threat Hunting
 * Date: 08-06-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/Bricks%20Heist/full_writeup.html
 
 ---
 
-## 🔹 Pickle Rick
+## 🔹 [Pickle Rick](https://fizashaikh293.github.io/thm-writeups/Pickle%20Rick/pickle-rick_writeup.html)
 
 * Difficulty: Easy
 * Category: Linux, Web Exploitation, Enumeration, Privilege Escalation
 * Date: 10-06-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/Pickle%20Rick/pickle-rick_writeup.html
 
 ---
 
-## 🔹 Wonderland
+## 🔹 [Wonderland](https://fizashaikh293.github.io/thm-writeups/Wonderland/wonderland_writeup.html)
 
 * Difficulty: Medium
 * Category: Linux, Enumeration, Privilege Escalation
 * Date: 12-06-2026
-* Link: https://fizashaikh293.github.io/thm-writeups/Wonderland/wonderland_writeup.html
 
 ---
 
@@ -86,7 +75,7 @@ https://tryhackme.com/p/fiza.sk293
 2. Enumerate everything before exploiting anything
 3. Gain initial access (foothold)
 4. Escalate privileges
-5. Document findings clearly for future reference
+5. Document findings clearly
 
 I focus on understanding *why* something works, not just getting the flag.
 
@@ -120,15 +109,13 @@ I focus on understanding *why* something works, not just getting the flag.
 
 # 📝 Note on Writeups
 
-These are written for learning purposes.
+These are written for learning purposes and are not meant to be copy-paste solutions.
 
-They are not meant to be copy-paste answers — instead, they explain:
+Each writeup focuses on:
 
-* how each step works
-* why it works
-* what alternatives exist
-
-If you're stuck on a room, these should help you understand the logic behind the solution.
+* understanding the attack path
+* why each step works
+* how to think like an attacker
 
 ---
 
