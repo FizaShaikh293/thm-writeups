@@ -69,6 +69,22 @@ Each writeup includes my thought process, tools used, and key lessons learned.
 
 ---
 
+## 🔹 [RootMe](https://fizashaikh293.github.io/thm-writeups/RootMe/rootme_writeup.html)
+
+* Difficulty: Easy
+* Category: Linux, Web Enumeration, File Upload Exploitation, Privilege Escalation
+* Date: 14-06-2026
+  
+---
+
+## 🔹 [Neighbour](https://fizashaikh293.github.io/thm-writeups/Neighbour/neighbour_writeup.html)
+
+* Difficulty: Easy
+* Category: Web Security, IDOR, Broken Access Control, Authentication Bypass
+* Date: 16-06-2026
+  
+---
+
 # 🔍 How I Approach Writeups
 
 1. Scan the target and identify running services
