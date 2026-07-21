@@ -4,18 +4,19 @@
 
 I'm currently learning cybersecurity through TryHackMe, and this repository is where I document everything I work through.
 
-Each writeup includes my thought process, tools used, and key lessons learned.
+Each writeup includes my thought process, methodology, tools used, and key lessons learned while solving each room.
 
-**TryHackMe Profile:**
-[fiza.sk293](https://tryhackme.com/p/fiza.sk293)
+**TryHackMe Profile:**  
+https://tryhackme.com/p/fiza.sk293
 
 ---
 
 # 📊 Stats
 
 * **Rank:** Top 9%
-* **Completed Rooms:** 44
-* **Badges:** 11
+* **Completed Rooms:** 67
+* **Badges:** 12
+* **Streak:** 71 (as of 21st July, 2026)
 
 ---
 
@@ -48,7 +49,7 @@ Each writeup includes my thought process, tools used, and key lessons learned.
 ## 🔹 [TryHack3M: Bricks Heist](https://fizashaikh293.github.io/thm-writeups/Bricks%20Heist/full_writeup.html)
 
 * Difficulty: Easy
-* Category: Boot-to-Root CTF + Threat Hunting
+* Category: Boot-to-Root CTF, Threat Hunting
 * Date: 08-06-2026
 
 ---
@@ -74,7 +75,7 @@ Each writeup includes my thought process, tools used, and key lessons learned.
 * Difficulty: Easy
 * Category: Linux, Web Enumeration, File Upload Exploitation, Privilege Escalation
 * Date: 14-06-2026
-  
+
 ---
 
 ## 🔹 [Neighbour](https://fizashaikh293.github.io/thm-writeups/Neighbour/neighbour_writeup.html)
@@ -82,57 +83,164 @@ Each writeup includes my thought process, tools used, and key lessons learned.
 * Difficulty: Easy
 * Category: Web Security, IDOR, Broken Access Control, Authentication Bypass
 * Date: 16-06-2026
-  
+
+---
+
+## 🔹 [TakeOver](https://fizashaikh293.github.io/thm-writeups/TakeOver/takeover_writeup.html)
+
+* Difficulty: Easy
+* Category: Subdomain Enumeration, DNS, Reconnaissance
+* Date: 18-06-2026
+
+---
+
+## 🔹 [Olympus](https://fizashaikh293.github.io/thm-writeups/Olympus/olympus_writeup.html)
+
+* Difficulty: Medium
+* Category: Linux, CTF, Enumeration, Privilege Escalation
+* Date: 20-06-2026
+
+---
+
+## 🔹 [Letter](https://fizashaikh293.github.io/thm-writeups/Letter/letter-writeup.html)
+
+* Difficulty: Easy
+* Category: Digital Forensics, File Analysis, OSINT
+* Date: 22-06-2026
+
+---
+
+## 🔹 [Cache Me Outside](https://fizashaikh293.github.io/thm-writeups/Cache-Me-Outside/CacheMeOutside-writeup.html)
+
+* Difficulty: Easy
+* Category: Web Security, Caching, Reconnaissance
+* Date: 24-06-2026
+
+---
+
+## 🔹 [Fools Mate: Revenge](https://fizashaikh293.github.io/thm-writeups/Fools-Mate-Revenge/FoolsMateRevenge_writeup.html)
+
+* Difficulty: Medium
+* Category: Linux, Enumeration, Web Exploitation, Privilege Escalation
+* Date: 26-06-2026
+
 ---
 
 # 🔍 How I Approach Writeups
 
-1. Scan the target and identify running services
-2. Enumerate everything before exploiting anything
-3. Gain initial access (foothold)
-4. Escalate privileges
-5. Document findings clearly
+1. Reconnaissance and information gathering
+2. Enumerate every possible attack surface
+3. Research findings before exploitation
+4. Gain an initial foothold
+5. Escalate privileges
+6. Capture flags and validate findings
+7. Document every step and explain why it works
 
-I focus on understanding *why* something works, not just getting the flag.
+I focus on understanding the attack path rather than simply obtaining the flag.
 
 ---
 
 # 🛠️ Tools I Use
 
-* `nmap` → port scanning & service detection
-* `gobuster` / `ffuf` → directory enumeration
-* `searchsploit` → exploit lookup
-* `netcat` → reverse shells
-* `linpeas` → privilege escalation enumeration
-* `strings` / `ghidra` → binary analysis
-* `getcap` → Linux capabilities
-* `GTFOBins` → privilege escalation techniques
-* `THM AttackBox` → browser-based hacking environment
+### Reconnaissance
+* `nmap`
+* `rustscan`
+* `whois`
+* `nslookup`
+* `dig`
+* `sublist3r`
+* `amass`
+
+### Web Enumeration
+* `gobuster`
+* `ffuf`
+* `curl`
+* Browser Developer Tools
+
+### Exploitation
+* `searchsploit`
+* `netcat`
+* `Burp Suite`
+* `Python HTTP Server`
+
+### Privilege Escalation
+* `linpeas`
+* `getcap`
+* `sudo -l`
+* `GTFOBins`
+* `pspy`
+
+### Analysis
+* `strings`
+* `exiftool`
+* `file`
+* `binwalk`
+* `ghidra`
+
+### Environment
+* THM AttackBox
+* Kali Linux
 
 ---
 
 # 🎯 Techniques Covered
 
-* Command injection via web shell
-* Sudo misconfiguration (`NOPASSWD: ALL`)
-* Sensitive data exposure in HTML / robots.txt
+### Reconnaissance
+* Port scanning
+* Service fingerprinting
+* Directory enumeration
+* DNS enumeration
+* Subdomain takeover detection
+* WHOIS lookups
+
+### Web Security
+* Hidden directories
+* Sensitive file discovery
+* robots.txt enumeration
+* Command Injection
+* File Upload Exploitation
+* IDOR
+* Broken Access Control
+* HTTP Header Analysis
+* Web Cache Enumeration
+
+### Linux Privilege Escalation
+* Sudo misconfigurations
+* PATH hijacking
 * Python library hijacking
-* SUID PATH hijacking
-* Linux capabilities exploitation (`cap_setuid`)
-* Hidden CSS credential discovery
+* Linux capabilities
+* SUID binaries
+* Writable files
+* Credential harvesting
+
+### Forensics & Analysis
+* Metadata analysis
+* File inspection
+* Binary analysis
+* Hidden information discovery
+
+---
+
+# 📚 What I Learn From Each Room
+
+Every room is documented with:
+
+* Enumeration methodology
+* Attack path explanation
+* Commands used
+* Why each exploit works
+* Privilege escalation techniques
+* Mitigations and security lessons
+* Key takeaways
 
 ---
 
 # 📝 Note on Writeups
 
-These are written for learning purposes and are not meant to be copy-paste solutions.
+These writeups are intended for educational purposes and personal learning.
 
-Each writeup focuses on:
-
-* Understanding the attack path
-* Why each step works
-* How to think like an attacker
+The goal is not just to capture the flag, but to understand the methodology behind every step and develop a structured penetration testing mindset.
 
 ---
 
-*Updated regularly as I complete more TryHackMe rooms.*
+⭐ *Updated regularly as I complete more TryHackMe rooms and continue my cybersecurity learning journey.*
