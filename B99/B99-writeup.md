@@ -12,9 +12,11 @@
 
 ## Overview
 
-This room is aimed for beginner level hackers but anyone can try to hack this box. There are two main intended ways to root the box, and both start from the same three open services. Nothing here needs a fancy exploit chain: it's a straightforward exercise in enumerating what's exposed, noticing a weak credential somewhere in that exposure, and turning a low-privilege shell into root through a sudo misconfiguration.
+Somewhere in the Nine-Nine precinct, someone set up a box, slapped a Jake Peralta–core image on port 80, hid a password inside it like it was a evidence locker, and then left a note to Jake lying around on an anonymous FTP share like a Post-it on a break room fridge. Bold strategy for a precinct full of detectives.
 
-The box only exposes FTP, SSH, and HTTP. Every path to root runs back through one of those three ports, which makes it a solid room for practicing the "enumerate everything before you touch anything" habit.
+The room bills itself as beginner-friendly, and it is, but "beginner-friendly" here really means "beginner-friendly if your beginner instincts are to check literally everything before touching anything." There are two intended ways to root the box, and neither of them requires an exploit so much as it requires noticing that somebody, somewhere, picked a password a rockyou.txt run would find in about the time it takes to say "cool cool cool cool cool, no doubt no doubt no doubt."
+
+The box only exposes FTP, SSH, and HTTP, three ports doing the work of a whole cast of overconfident detectives, and every route to root loops back through one of them.
 
 ```
 Attack surface
@@ -44,15 +46,15 @@ PORT   STATE SERVICE
 80/tcp open  http
 ```
 
-Three ports, no red herrings. The room's difficulty comes from patience with enumeration, not from complexity in what's running.
+Three ports, no red herrings, no plot twist. This box isn't hiding a fourth service behind a knock sequence; it's just waiting to see if you'll actually look at what's in front of you.
 
 ### Port 80 — A Single Image and a Hint
 
-The web root serves a single Brooklyn 99–themed image and nothing else visible on the page itself. Viewing the page source turns up a comment directly pointing toward steganography as one of the two intended routes, which is the first branch in the room.
+The web root serves up exactly one Brooklyn 99–themed image and absolutely nothing else, which is either minimalist web design or a budget of zero dollars, hard to say. Viewing the page source, because clicking around a static image gets old fast, turns up a comment practically begging you to try steganography. Subtle as Charles Boyle at a crime scene.
 
 ### Port 21 — Anonymous FTP
 
-The FTP service accepts an `anonymous` login with a blank password, which is the second branch:
+The FTP service happily accepts an `anonymous` login with a blank password, security posture of a precinct break room:
 
 ```bash
 ftp <TARGET_IP>
@@ -60,7 +62,7 @@ ftp <TARGET_IP>
 # Password: (blank, just press enter)
 ```
 
-Listing the directory turns up a file named `note_to_jake.txt`. Downloading and reading it (`get note_to_jake.txt`, then `cat` locally) reveals a short message, apparently from a colleague to a user named **Jake**, hinting that his password isn't a strong one.
+Listing the directory turns up a file called `note_to_jake.txt`, which is exactly as juicy as it sounds. Downloading and reading it (`get note_to_jake.txt`, then `cat` locally) reveals a short message from a colleague to a user named **Jake**, gently roasting him for having a weak password. Somewhere, Amy Santiago is shaking her head.
 
 ```
 FTP enumeration chain
@@ -80,19 +82,19 @@ That single file gives us everything needed for the more direct of the two root 
 
 ### Path A — Brute-Forcing SSH
 
-With a candidate username in hand, the note's "weak password" hint points straight at an SSH brute-force rather than anything on the web or FTP services:
+With a name and a public roast in hand, the note practically hands you the attack plan: go brute-force the guy's SSH password.
 
 ```bash
 hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<TARGET_IP>
 ```
 
-Hydra returns a working password quickly, since it's low down a common wordlist. Logging in confirms it:
+Hydra finds it embarrassingly fast, because it's parked near the top of a wordlist that's cracked more accounts than Jake's cracked jokes. Logging in confirms it:
 
 ```bash
 ssh jake@<TARGET_IP>
 ```
 
-This drops straight into a shell as `jake`, where the user flag is sitting in the home directory.
+Straight into a shell as `jake`, no drama, no negotiation, no hostage situation. The user flag is waiting in the home directory like it was expecting company.
 
 ```
 Answer 1 — User flag: ee11cbb19052e40b07aac0ca060c23ee
@@ -100,19 +102,19 @@ Answer 1 — User flag: ee11cbb19052e40b07aac0ca060c23ee
 
 ### Path B — Steganography in the Web Image
 
-The alternative, slower route runs entirely through port 80. Downloading the image served on the site and checking it for hidden data with `steghide` requires a password:
+For anyone who prefers the scenic route, path B runs entirely through port 80. Downloading the image and pointing `steghide` at it demands a password up front, because apparently even hidden data in this room can't resist a little gatekeeping:
 
 ```bash
 steghide extract -sf brooklyn99.jpg
 ```
 
-Since the password isn't known upfront, `stegcracker` brute-forces it against the same image using a standard wordlist:
+Since nobody handed us that password, `stegcracker` does the honors, brute-forcing it against the same tired wordlist:
 
 ```bash
 stegcracker brooklyn99.jpg /usr/share/wordlists/rockyou.txt
 ```
 
-Once cracked, the recovered password can be fed back into `steghide` to pull the hidden data out of the image, which yields a set of SSH credentials. Either path — Hydra against SSH or stego-cracking the image — lands in the same place: a shell as a low-privileged user.
+Once it cracks, feeding that password back into `steghide` pulls a set of SSH credentials straight out of a picture of a precinct-branded image, which is either clever or a cry for help depending on how you look at it. Either path, brute Hydra or stego-crack an image, lands you in the exact same place: a shell as a low-privileged user who really should've picked a better password.
 
 ```
 Two paths, one outcome
@@ -131,17 +133,17 @@ Two paths, one outcome
 
 ### Checking Sudo Rights
 
-Once inside as `jake`, a quick check of what the account is allowed to run as another user reveals the escalation path immediately:
+Once inside as `jake`, checking what he's allowed to run as someone else answers the "how do we root this" question almost instantly:
 
 ```bash
 sudo -l
 ```
 
-The account has passwordless sudo rights to run `less` — a program never intended to be a privilege-escalation vector, but one that GTFOBins documents extensively for exactly this scenario.
+Jake has passwordless sudo rights to run `less`, the humble pager, the last program anyone should trust with root. GTFOBins has known about this one for years, and this box seems determined to prove the point.
 
 ### Abusing `less` via GTFOBins
 
-`less` can spawn a shell from within its pager interface using `!`, and if it's invoked through `sudo`, that shell inherits root privileges:
+`less` can spawn a shell from inside its own pager view with a single `!`, and when `less` itself was launched via `sudo`, that shell inherits root without so much as a background check:
 
 ```bash
 sudo less /etc/hosts
@@ -149,7 +151,7 @@ sudo less /etc/hosts
 !/bin/sh
 ```
 
-This drops into a root shell, where the root flag is located.
+And just like that, root. No exploit, no CVE, just a sudoers entry somebody really shouldn't have written. The root flag is sitting right there, unbothered.
 
 ```
 Answer 2 — Root flag: 63a9f0ea7bb98050796b649e85481845
@@ -201,7 +203,7 @@ Privilege escalation chain
 | 1 | User flag   | `ee11cbb19052e40b07aac0ca060c23ee`   |
 | 2 | Root flag   | `63a9f0ea7bb98050796b649e85481845`   |
 
-**Would I recommend this room?** Yes — it's a clean, low-frustration introduction to combining basic enumeration (FTP, HTTP source) with credential attacks (Hydra, stegcracker) and a textbook GTFOBins privilege escalation. Good first "real" box for anyone past the absolute fundamentals.
+**Would I recommend this room?** Cool, cool, cool, cool, cool — yes, no doubt. It's a clean, low-frustration intro to enumeration (FTP, HTTP source), credential attacks (Hydra, stegcracker), and a textbook GTFOBins privesc, all wrapped in a Brooklyn 99 bow. Good first "real" box for anyone past the absolute fundamentals, and a fine reminder that most "hacking" is just reading the note somebody left lying around.
 
 ---
 
