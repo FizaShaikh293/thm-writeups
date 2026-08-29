@@ -81,7 +81,7 @@ https://tryhackme.com/p/fiza.sk293
 **Category:** Enumeration, Web Security, Linux
 **Date:** 2026
 
-### 🔹 [Valley](https://fizashaikh293.github.io/thm-writeups/Valley/valley_writeup.html)
+### 🔹 [Valley](https://fizashaikh293.github.io/thm-writeups/Valley/valley-writeup.html)
 
 **Difficulty:** CTF
 **Category:** Linux, Enumeration, Privilege Escalation
