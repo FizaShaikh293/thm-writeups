@@ -108,4 +108,268 @@ https://tryhackme.com/p/fiza.sk293
 **Category:** Subdomain Enumeration, DNS, Reconnaissance
 **Date:** 18-06-2026
 
-### 🔹 [Cache Me Outside](https://fizashaikh293.github.io/thm-writeups/Cache-Me-Outside/CacheM)
+### 🔹 [Cache Me Outside](https://fizashaikh293.github.io/thm-writeups/Cache-Me-Outside/CacheMeOutside-writeup.html)
+
+**Difficulty:** Easy
+**Category:** Web Security, Web Cache, Reconnaissance
+**Date:** 24-06-2026
+
+### 🔹 [Bricks Heist](https://fizashaikh293.github.io/thm-writeups/Bricks%20Heist/full_writeup.html)
+
+**Difficulty:** Easy
+**Category:** Boot-to-Root CTF, Web Security, Threat Hunting
+**Date:** 08-06-2026
+
+### 🔹 [Corridor](https://github.com/FizaShaikh293/thm-writeups/tree/main/Corridor)
+
+**Category:** Web Security, IDOR, Access Control
+**Date:** 2026
+
+### 🔹 [Lo-Fi](https://github.com/FizaShaikh293/thm-writeups/tree/main/Lo-Fi)
+
+**Category:** Web Security, CTF
+**Date:** 2026
+
+### 🔹 [MD2PDF](https://github.com/FizaShaikh293/thm-writeups/tree/main/MD2PDF)
+
+**Category:** Web Security, CTF
+**Date:** 2026
+
+---
+
+## 🔎 Reconnaissance & Enumeration
+
+### 🔹 [TakeOver](https://fizashaikh293.github.io/thm-writeups/TakeOver/takeover_writeup.html)
+
+**Focus:** DNS enumeration, subdomain discovery, reconnaissance and subdomain takeover detection.
+
+### 🔹 [RootMe](https://fizashaikh293.github.io/thm-writeups/RootMe/rootme_writeup.html)
+
+**Focus:** Web enumeration, directory discovery, file upload exploitation and Linux privilege escalation.
+
+### 🔹 [Neighbour](https://fizashaikh293.github.io/thm-writeups/Neighbour/neighbour_writeup.html)
+
+**Focus:** Authentication weaknesses, IDOR and broken access control.
+
+### 🔹 [Compiled](https://github.com/FizaShaikh293/thm-writeups/tree/main/Compiled)
+
+**Focus:** Enumeration, application analysis and exploitation.
+
+---
+
+## 🕵️ Forensics, OSINT & Analysis
+
+### 🔹 [Letter](https://fizashaikh293.github.io/thm-writeups/Letter/letter-writeup.html)
+
+**Difficulty:** Easy
+**Category:** Digital Forensics, File Analysis, OSINT
+**Date:** 22-06-2026
+
+This writeup focuses on analysing files and extracting useful information through forensic and OSINT techniques.
+
+---
+
+## 🤖 AI & Security
+
+### 🔹 [AI Threat Modelling Assessment](https://fizashaikh293.github.io/thm-writeups/AI%20Threat%20Modelling/AI-TM_Writeup.html)
+
+**Difficulty:** Easy
+**Category:** AI Security, Threat Modelling
+**Date:** 22-05-2026
+
+Explores AI-enhanced cybersecurity threats, attack scenarios, threat modelling methodology and defensive considerations.
+
+---
+
+## 📚 Security Learning Paths
+
+### 🔹 [Pre Security Path](https://fizashaikh293.github.io/thm-writeups/Pre%20Security%20Path/)
+
+**Difficulty:** Easy
+**Category:** Networking, Computing Fundamentals, Security Fundamentals
+**Date:** 06-06-2026
+
+Covers foundational concepts required for progressing into practical cybersecurity, including networking, operating systems, software and security fundamentals.
+
+---
+
+# 🛠️ Security Tools
+
+## 🔎 Reconnaissance & Enumeration
+
+* `Nmap` — Port scanning & service enumeration
+* `RustScan` — Fast port discovery
+* `WHOIS` — Domain registration information
+* `nslookup` — DNS queries
+* `dig` — DNS reconnaissance
+* `Sublist3r` — Subdomain enumeration
+* `Amass` — Attack-surface & subdomain discovery
+
+## 🌐 Web Security
+
+* `Gobuster` — Directory & DNS enumeration
+* `FFUF` — Web fuzzing
+* `Burp Suite` — Web application testing
+* `curl` — HTTP requests & endpoint analysis
+* Browser Developer Tools — Headers, JavaScript & application analysis
+
+## 💥 Exploitation
+
+* `SearchSploit` — Exploit database research
+* `Netcat` — Reverse shells & network communication
+* `Python HTTP Server` — File transfer & payload delivery
+* Custom Python scripts — Automation and exploitation support
+
+## 🐧 Linux Privilege Escalation
+
+* `LinPEAS` — Automated privilege escalation enumeration
+* `sudo -l` — Sudo permission analysis
+* `getcap` — Linux capabilities enumeration
+* `pspy` — Process monitoring
+* `GTFOBins` — Linux binary abuse research
+
+## 🕵️ Forensics & File Analysis
+
+* `strings` — String extraction
+* `file` — File identification
+* `exiftool` — Metadata extraction
+* `binwalk` — File & firmware analysis
+* `Ghidra` — Reverse engineering & binary analysis
+
+## 💻 Environments
+
+* TryHackMe AttackBox
+* Kali Linux
+* Linux CLI
+* Git & GitHub
+
+---
+
+# 🎯 Techniques Covered
+
+### 🔍 Reconnaissance
+
+* Port scanning
+* Service enumeration
+* Banner grabbing
+* Directory enumeration
+* DNS enumeration
+* Subdomain enumeration
+* WHOIS reconnaissance
+* Attack-surface discovery
+* Subdomain takeover detection
+
+### 🌐 Web Security
+
+* Hidden directory discovery
+* Sensitive file discovery
+* `robots.txt` enumeration
+* Authentication bypass
+* IDOR
+* Broken access control
+* Command injection
+* File upload vulnerabilities
+* HTTP header analysis
+* Web cache enumeration
+* Web application reconnaissance
+
+### 🐧 Linux Security
+
+* Linux enumeration
+* Sudo misconfigurations
+* SUID binaries
+* Linux capabilities
+* PATH hijacking
+* Python library hijacking
+* Writable files
+* Credential discovery
+* Process monitoring
+* Privilege escalation
+
+### 🕵️ Digital Forensics & OSINT
+
+* Metadata analysis
+* File inspection
+* Hidden information discovery
+* Binary analysis
+* OSINT investigation
+* File structure analysis
+
+### 🤖 AI Security
+
+* AI threat modelling
+* AI-enhanced social engineering
+* AI attack scenarios
+* Threat identification
+* Security controls and mitigations
+
+---
+
+# 🧠 My Methodology
+
+I approach each room using a structured penetration-testing mindset:
+
+```text
+1. Reconnaissance
+        ↓
+2. Attack Surface Mapping
+        ↓
+3. Enumeration
+        ↓
+4. Vulnerability Identification
+        ↓
+5. Exploitation
+        ↓
+6. Initial Foothold
+        ↓
+7. Privilege Escalation
+        ↓
+8. Flag Capture & Validation
+        ↓
+9. Documentation
+        ↓
+10. Mitigation & Security Lessons
+```
+
+I try to understand **why** something works rather than blindly following commands.
+
+---
+
+# 📖 What I Document
+
+Each writeup aims to include:
+
+* 🔎 Enumeration methodology
+* 🧰 Tools and commands used
+* 🧠 Reasoning behind each step
+* 🎯 Attack-path development
+* 💥 Exploitation process
+* 🐧 Privilege escalation
+* 🚩 Flag discovery
+* 🛡️ Mitigations
+* 💡 Key security lessons
+* 📝 Practical takeaways
+
+---
+
+# 🚀 Skills I'm Building
+
+Through these labs and projects, I'm developing practical experience in:
+
+**Offensive Security • Web Security • Linux Security • Network Reconnaissance • Vulnerability Analysis • Privilege Escalation • Digital Forensics • OSINT • Threat Modelling • AI Security • Threat Hunting**
+
+---
+
+# 📌 Disclaimer
+
+These writeups are created for **educational purposes and personal cybersecurity development**.
+
+All exploitation techniques are performed against intentionally vulnerable environments such as TryHackMe machines and CTF challenges.
+
+The goal is to develop a responsible security mindset and understand how vulnerabilities can be identified, exploited and ultimately mitigated.
+
+---
+
+⭐ *Updated regularly as I complete more rooms, build new security projects and continue developing my cybersecurity skills.*
+
+**Keep learning. Keep hacking. Hack responsibly. 🛡️**
